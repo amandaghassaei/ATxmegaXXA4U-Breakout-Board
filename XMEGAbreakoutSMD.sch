@@ -3184,6 +3184,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="D5" library="fab" deviceset="ZENER_DIODE" device="SOD123"/>
 <part name="JUMPER1" library="fab" deviceset="RES-US" device="1206FAB" value="0"/>
 <part name="JUMPER2" library="fab" deviceset="RES-US" device="1206FAB" value="0"/>
+<part name="C5" library="fab" deviceset="CAP-US" device="1206" value="4.7uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -3222,6 +3223,7 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="D5" gate="1" x="-30.48" y="124.46" rot="R90"/>
 <instance part="JUMPER1" gate="G$1" x="0" y="175.26"/>
 <instance part="JUMPER2" gate="G$1" x="0" y="167.64"/>
+<instance part="C5" gate="G$1" x="33.02" y="160.02" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -3436,9 +3438,13 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="170.18" x2="43.18" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="170.18" x2="43.18" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="170.18" x2="27.94" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="170.18" x2="33.02" y2="170.18" width="0.1524" layer="91"/>
 <junction x="43.18" y="170.18"/>
 <label x="27.94" y="170.18" size="1.778" layer="95"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="170.18" x2="27.94" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="170.18" x2="33.02" y2="162.56" width="0.1524" layer="91"/>
+<junction x="33.02" y="170.18"/>
 </segment>
 <segment>
 <wire x1="-45.72" y1="137.16" x2="-40.64" y2="137.16" width="0.1524" layer="91"/>
@@ -3552,6 +3558,10 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="96.52" y1="147.32" x2="106.68" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="147.32" x2="106.68" y2="144.78" width="0.1524" layer="91"/>
 <junction x="96.52" y="147.32"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="154.94" x2="33.02" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="147.32" x2="43.18" y2="147.32" width="0.1524" layer="91"/>
+<junction x="43.18" y="147.32"/>
 </segment>
 </net>
 <net name="VCC" class="0">

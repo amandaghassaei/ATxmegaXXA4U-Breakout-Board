@@ -803,6 +803,7 @@ design rules under a new name.</description>
 <element name="D5" library="fab" package="SOD123" value="" x="96.2025" y="23.1775"/>
 <element name="JUMPER1" library="fab" package="R1206FAB" value="0" x="86.0425" y="31.4325" rot="R220"/>
 <element name="JUMPER2" library="fab" package="R1206FAB" value="0" x="69.85" y="18.0975" rot="R90"/>
+<element name="C5" library="fab" package="C1206" value="4.7uF" x="46.99" y="54.61" rot="R180"/>
 </elements>
 <signals>
 <signal name="PA7">
@@ -1127,6 +1128,13 @@ design rules under a new name.</description>
 <wire x1="46.99" y1="51.435" x2="47.625" y2="52.07" width="0.6096" layer="1"/>
 <wire x1="49.76418125" y1="52.395684375" x2="47.950684375" y2="52.395684375" width="0.6096" layer="1"/>
 <wire x1="47.950684375" y1="52.395684375" x2="47.625" y2="52.07" width="0.6096" layer="1"/>
+<contactref element="C5" pad="1"/>
+<wire x1="48.39" y1="54.61" x2="48.39" y2="54.48" width="0.6096" layer="1"/>
+<wire x1="49.53" y1="52.629865625" x2="49.76418125" y2="52.395684375" width="0.6096" layer="1"/>
+<wire x1="48.39" y1="54.48" x2="49.025" y2="54.48" width="0.6096" layer="1"/>
+<wire x1="49.025" y1="54.48" x2="49.53" y2="53.975" width="0.6096" layer="1"/>
+<wire x1="49.53" y1="53.975" x2="49.53" y2="52.629865625" width="0.6096" layer="1"/>
+<wire x1="49.53" y1="52.629865625" x2="49.76418125" y2="52.395684375" width="0.6096" layer="1"/>
 </signal>
 <signal name="D+">
 <contactref element="IC1" pad="26"/>
@@ -1249,6 +1257,9 @@ design rules under a new name.</description>
 <via x="43.815" y="53.975" extent="1-16" drill="0.0254" diameter="1.016"/>
 <wire x1="43.815" y1="53.975" x2="43.815" y2="52.2039375" width="0.6096" layer="16"/>
 <wire x1="43.815" y1="52.2039375" x2="51.5176125" y2="44.501325" width="0.6096" layer="16"/>
+<contactref element="C5" pad="2"/>
+<wire x1="45.59" y1="54.61" x2="44.45" y2="54.61" width="0.6096" layer="1"/>
+<wire x1="44.45" y1="54.61" x2="43.815" y2="53.975" width="0.6096" layer="1"/>
 </signal>
 <signal name="VCC">
 <contactref element="IC1" pad="9"/>
