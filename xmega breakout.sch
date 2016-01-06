@@ -1414,6 +1414,54 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <rectangle x1="-3.2385" y1="-3.1623" x2="-1.3843" y2="-2.2987" layer="51" rot="R270"/>
 <rectangle x1="1.3843" y1="-3.1623" x2="3.2385" y2="-2.2987" layer="51" rot="R270"/>
 </package>
+<package name="DO41Z10">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 2.54 mm, horizontal, grid 10.16 mm</description>
+<wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="0" x2="3.937" y2="0" width="0.762" layer="51"/>
+<wire x1="-5.08" y1="0" x2="-4.064" y2="0" width="0.762" layer="51"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<pad name="C" x="-5.08" y="0" drill="1.1176"/>
+<pad name="A" x="5.08" y="0" drill="1.1176"/>
+<text x="-1.905" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.905" y="-2.794" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
+<rectangle x1="2.032" y1="-0.381" x2="3.937" y2="0.381" layer="21"/>
+<rectangle x1="-3.937" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
+</package>
+<package name="SOD123">
+<description>&lt;b&gt;SMALL OUTLINE DIODE&lt;/b&gt;</description>
+<wire x1="-2.973" y1="0.983" x2="2.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.973" y1="-0.983" x2="-2.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-2.973" y1="-0.983" x2="-2.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.973" y1="0.983" x2="2.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.321" y1="0.787" x2="1.321" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="-1.321" y1="-0.787" x2="1.321" y2="-0.787" width="0.1016" layer="51"/>
+<wire x1="-1.321" y1="-0.787" x2="-1.321" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="1.321" y1="-0.787" x2="1.321" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="-1" y1="0" x2="0" y2="0.5" width="0.2032" layer="51"/>
+<wire x1="0" y1="0.5" x2="0" y2="-0.5" width="0.2032" layer="51"/>
+<wire x1="0" y1="-0.5" x2="-1" y2="0" width="0.2032" layer="51"/>
+<wire x1="-1" y1="0.5" x2="-1" y2="0" width="0.2032" layer="51"/>
+<wire x1="-1" y1="0" x2="-1" y2="-0.5" width="0.2032" layer="51"/>
+<smd name="CATHODE" x="-1.7" y="0" dx="1.6" dy="0.8" layer="1"/>
+<smd name="ANODE" x="1.7" y="0" dx="1.6" dy="0.8" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.9558" y1="-0.3048" x2="-1.3716" y2="0.3048" layer="51" rot="R180"/>
+<rectangle x1="1.3716" y1="-0.3048" x2="1.9558" y2="0.3048" layer="51" rot="R180"/>
+<rectangle x1="-0.4001" y1="-0.7" x2="0.4001" y2="0.7" layer="35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="C-US">
@@ -1506,6 +1554,18 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <pin name="IN" x="-7.62" y="2.54" length="point"/>
 <pin name="GND" x="0" y="-2.54" length="point" rot="R90"/>
 <pin name="OUT" x="7.62" y="2.54" length="point" rot="R180"/>
+</symbol>
+<symbol name="ZENER">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
+<text x="-1.778" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.778" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="ANODE" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="CATHODE" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1671,6 +1731,32 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 <connect gate="G$1" pin="GND" pad="2 4"/>
 <connect gate="G$1" pin="IN" pad="1"/>
 <connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ZENER_DIODE" prefix="D" uservalue="yes">
+<description>zener diode</description>
+<gates>
+<gate name="1" symbol="ZENER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DO41Z10" package="DO41Z10">
+<connects>
+<connect gate="1" pin="ANODE" pad="A"/>
+<connect gate="1" pin="CATHODE" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOD123" package="SOD123">
+<connects>
+<connect gate="1" pin="ANODE" pad="ANODE"/>
+<connect gate="1" pin="CATHODE" pad="CATHODE"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2929,8 +3015,8 @@ Source: http://www.osram.convergy.de/</description>
 <part name="LED1" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+1" library="SparkFun" deviceset="VCC" device=""/>
-<part name="C4" library="fab" deviceset="CAP-US" device="1206" value="10uF"/>
-<part name="R3" library="fab" deviceset="RES-US" device="1206FAB"/>
+<part name="C4" library="fab" deviceset="CAP-US" device="1206" value="4.7nF"/>
+<part name="R3" library="fab" deviceset="RES-US" device="1206FAB" value="1M"/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="JP5" library="SparkFun" deviceset="M08" device="SMD-STRAIGHT-ALT"/>
@@ -2939,6 +3025,11 @@ Source: http://www.osram.convergy.de/</description>
 <part name="P+3" library="SparkFun" deviceset="VCC" device=""/>
 <part name="P+4" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
+<part name="D1" library="fab" deviceset="ZENER_DIODE" device="SOD123"/>
+<part name="D2" library="fab" deviceset="ZENER_DIODE" device="SOD123"/>
+<part name="D3" library="fab" deviceset="ZENER_DIODE" device="SOD123"/>
+<part name="D4" library="fab" deviceset="ZENER_DIODE" device="SOD123"/>
+<part name="D5" library="fab" deviceset="ZENER_DIODE" device="SOD123"/>
 </parts>
 <sheets>
 <sheet>
@@ -2970,6 +3061,11 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="P+3" gate="1" x="-12.7" y="96.52"/>
 <instance part="P+4" gate="1" x="104.14" y="175.26"/>
 <instance part="GND5" gate="1" x="106.68" y="142.24"/>
+<instance part="D1" gate="1" x="-45.72" y="139.7" rot="R270"/>
+<instance part="D2" gate="1" x="-38.1" y="134.62" rot="R90"/>
+<instance part="D3" gate="1" x="-38.1" y="124.46" rot="R90"/>
+<instance part="D4" gate="1" x="-50.8" y="124.46" rot="R90"/>
+<instance part="D5" gate="1" x="-30.48" y="124.46" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -3188,14 +3284,34 @@ Source: http://www.osram.convergy.de/</description>
 <junction x="43.18" y="170.18"/>
 <label x="27.94" y="170.18" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-45.72" y1="137.16" x2="-40.64" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="137.16" x2="-38.1" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="137.16" x2="-35.56" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="137.16" x2="-30.48" y2="137.16" width="0.1524" layer="91"/>
+<label x="-22.86" y="137.16" size="1.778" layer="95"/>
+<pinref part="D1" gate="1" pin="CATHODE"/>
+<pinref part="D2" gate="1" pin="CATHODE"/>
+<junction x="-38.1" y="137.16"/>
+<pinref part="D5" gate="1" pin="CATHODE"/>
+<wire x1="-30.48" y1="137.16" x2="-15.24" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="127" x2="-30.48" y2="137.16" width="0.1524" layer="91"/>
+<junction x="-30.48" y="137.16"/>
+</segment>
 </net>
 <net name="D+" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="D+"/>
 <wire x1="-60.96" y1="152.4" x2="-55.88" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="152.4" x2="-55.88" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="134.62" x2="-25.4" y2="134.62" width="0.1524" layer="91"/>
-<label x="-30.48" y="134.62" size="1.778" layer="95"/>
+<wire x1="-55.88" y1="152.4" x2="-55.88" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="129.54" x2="-38.1" y2="129.54" width="0.1524" layer="91"/>
+<label x="-17.78" y="129.54" size="1.778" layer="95"/>
+<pinref part="D2" gate="1" pin="ANODE"/>
+<wire x1="-38.1" y1="129.54" x2="-15.24" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="132.08" x2="-38.1" y2="129.54" width="0.1524" layer="91"/>
+<junction x="-38.1" y="129.54"/>
+<pinref part="D3" gate="1" pin="CATHODE"/>
+<wire x1="-38.1" y1="127" x2="-38.1" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD6"/>
@@ -3326,8 +3442,17 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="U$1" gate="G$1" pin="D-"/>
 <wire x1="-60.96" y1="154.94" x2="-50.8" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="154.94" x2="-50.8" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="144.78" x2="-25.4" y2="144.78" width="0.1524" layer="91"/>
-<label x="-30.48" y="144.78" size="1.778" layer="95"/>
+<wire x1="-50.8" y1="144.78" x2="-45.72" y2="144.78" width="0.1524" layer="91"/>
+<label x="-17.78" y="144.78" size="1.778" layer="95"/>
+<wire x1="-45.72" y1="144.78" x2="-40.64" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="144.78" x2="-35.56" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="144.78" x2="-15.24" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="D1" gate="1" pin="ANODE"/>
+<wire x1="-45.72" y1="144.78" x2="-45.72" y2="142.24" width="0.1524" layer="91"/>
+<junction x="-45.72" y="144.78"/>
+<pinref part="D4" gate="1" pin="CATHODE"/>
+<wire x1="-50.8" y1="127" x2="-50.8" y2="144.78" width="0.1524" layer="91"/>
+<junction x="-50.8" y="144.78"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD7"/>
@@ -3357,6 +3482,20 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="-43.18" y1="177.8" x2="-43.18" y2="175.26" width="0.1524" layer="91"/>
 <junction x="-50.8" y="177.8"/>
 <wire x1="-73.66" y1="165.1" x2="-66.04" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="147.32" x2="-66.04" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="119.38" x2="-50.8" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="D3" gate="1" pin="ANODE"/>
+<wire x1="-50.8" y1="119.38" x2="-38.1" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="119.38" x2="-30.48" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="119.38" x2="-15.24" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="119.38" x2="-38.1" y2="121.92" width="0.1524" layer="91"/>
+<junction x="-38.1" y="119.38"/>
+<pinref part="D4" gate="1" pin="ANODE"/>
+<wire x1="-50.8" y1="119.38" x2="-50.8" y2="121.92" width="0.1524" layer="91"/>
+<junction x="-50.8" y="119.38"/>
+<pinref part="D5" gate="1" pin="ANODE"/>
+<wire x1="-30.48" y1="119.38" x2="-30.48" y2="121.92" width="0.1524" layer="91"/>
+<junction x="-30.48" y="119.38"/>
 </segment>
 </net>
 <net name="MISO" class="0">
