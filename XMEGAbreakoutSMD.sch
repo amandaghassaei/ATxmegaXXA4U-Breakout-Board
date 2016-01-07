@@ -3236,8 +3236,8 @@ Source: http://www.osram.convergy.de/</description>
 </classes>
 <parts>
 <part name="IC1" library="atmel" deviceset="XMEGA16A4" device="" value="XMEGA16A4"/>
-<part name="JP2" library="SparkFun" deviceset="M08" device="1X08"/>
-<part name="JP3" library="SparkFun" deviceset="M08" device="1X08"/>
+<part name="JP2" library="SparkFun" deviceset="M08" device="SMD-STRAIGHT-ALT"/>
+<part name="JP3" library="SparkFun" deviceset="M08" device="SMD-STRAIGHT-ALT"/>
 <part name="C1" library="fab" deviceset="CAP-US" device="1206" value="0.1uF"/>
 <part name="C2" library="fab" deviceset="CAP-US" device="1206" value="10uF"/>
 <part name="R1" library="fab" deviceset="RES-US" device="1206FAB" value="10K"/>
@@ -3254,8 +3254,8 @@ Source: http://www.osram.convergy.de/</description>
 <part name="R3" library="fab" deviceset="RES-US" device="1206FAB" value="1M"/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
-<part name="JP5" library="SparkFun" deviceset="M08" device="1X08"/>
-<part name="JP1" library="SparkFun" deviceset="M08" device="1X08_2X1X4A"/>
+<part name="JP5" library="SparkFun" deviceset="M08" device="SMD-STRAIGHT-ALT"/>
+<part name="JP1" library="SparkFun" deviceset="M08" device=""/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+3" library="SparkFun" deviceset="VCC" device=""/>
 <part name="P+4" library="SparkFun" deviceset="VCC" device=""/>
