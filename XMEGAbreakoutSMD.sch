@@ -2167,16 +2167,6 @@ wave soldering</description>
 <text x="-1.778" y="1.27" size="1.016" layer="25" ratio="15">&gt;NAME</text>
 <text x="-1.778" y="-2.286" size="1.016" layer="27" ratio="15">&gt;VALUE</text>
 </package>
-<package name="R1206BFAB">
-<wire x1="-2.032" y1="1.016" x2="2.032" y2="1.016" width="0.127" layer="21"/>
-<wire x1="2.032" y1="1.016" x2="2.032" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="2.032" y1="-1.016" x2="-2.032" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-2.032" y1="-1.016" x2="-2.032" y2="1.016" width="0.127" layer="21"/>
-<smd name="1" x="-1.651" y="0" dx="1.27" dy="1.905" layer="16"/>
-<smd name="2" x="1.651" y="0" dx="1.27" dy="1.905" layer="16"/>
-<text x="-1.778" y="1.27" size="1.016" layer="25" ratio="15">&gt;NAME</text>
-<text x="-1.778" y="-2.286" size="1.016" layer="27" ratio="15">&gt;VALUE</text>
-</package>
 <package name="6MM_SWITCH">
 <description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
 <wire x1="3.302" y1="-0.762" x2="3.048" y2="-0.762" width="0.1524" layer="21"/>
@@ -2479,15 +2469,6 @@ Variants with postfix FAB are widened to allow the routing of internal traces</d
 </technologies>
 </device>
 <device name="1206FAB" package="R1206FAB">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="" package="R1206BFAB">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -3847,7 +3828,6 @@ Source: http://www.osram.convergy.de/</description>
 <part name="P+3" library="SparkFun" deviceset="VCC" device=""/>
 <part name="P+4" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
-<part name="JUMPER1" library="fab" deviceset="RES-US" device="1206FAB" value="0"/>
 <part name="C5" library="fab" deviceset="CAP-US" device="1206" value="4.7uF"/>
 <part name="U$2" library="SparkFun" deviceset="INVERTER" device=""/>
 <part name="JP8" library="SparkFun" deviceset="M02" device=""/>
@@ -3855,6 +3835,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="JP6" library="fab" deviceset="PINHD-2X3-SMD" device=""/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+2" library="SparkFun" deviceset="VCC" device=""/>
+<part name="JUMPER" library="fab" deviceset="RES-US" device="1206FAB" value="0Ohm"/>
 </parts>
 <sheets>
 <sheet>
@@ -3885,7 +3866,6 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="P+3" gate="1" x="-12.7" y="96.52"/>
 <instance part="P+4" gate="1" x="104.14" y="175.26"/>
 <instance part="GND5" gate="1" x="106.68" y="142.24"/>
-<instance part="JUMPER1" gate="G$1" x="0" y="175.26"/>
 <instance part="C5" gate="G$1" x="30.48" y="162.56" rot="R270"/>
 <instance part="U$2" gate="G$1" x="30.48" y="116.84"/>
 <instance part="JP8" gate="G$1" x="137.16" y="160.02"/>
@@ -3893,6 +3873,7 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="JP6" gate="A" x="139.7" y="20.32"/>
 <instance part="GND6" gate="1" x="157.48" y="12.7"/>
 <instance part="P+2" gate="1" x="157.48" y="25.4"/>
+<instance part="JUMPER" gate="G$1" x="88.9" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -4125,12 +4106,6 @@ Source: http://www.osram.convergy.de/</description>
 </net>
 <net name="D+" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="PD6"/>
-<pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="22.86" x2="83.82" y2="22.86" width="0.1524" layer="91"/>
-<label x="76.2" y="22.86" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="D+"/>
 <wire x1="-60.96" y1="152.4" x2="-55.88" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="152.4" x2="-55.88" y2="129.54" width="0.1524" layer="91"/>
@@ -4139,9 +4114,15 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="-48.26" y1="129.54" x2="-38.1" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GND"/>
-<wire x1="20.32" y1="111.76" x2="7.62" y2="111.76" width="0.1524" layer="91"/>
-<label x="7.62" y="111.76" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="PD7"/>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="25.4" x2="83.82" y2="25.4" width="0.1524" layer="91"/>
+<label x="76.2" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="Y"/>
+<wire x1="40.64" y1="111.76" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
+<label x="45.72" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -4303,15 +4284,15 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="-40.64" y1="144.78" x2="-35.56" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="PD7"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="25.4" x2="83.82" y2="25.4" width="0.1524" layer="91"/>
-<label x="76.2" y="25.4" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="PD6"/>
+<pinref part="JP3" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="22.86" x2="83.82" y2="22.86" width="0.1524" layer="91"/>
+<label x="76.2" y="22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="Y"/>
-<wire x1="40.64" y1="111.76" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
-<label x="45.72" y="111.76" size="1.778" layer="95"/>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<wire x1="20.32" y1="111.76" x2="7.62" y2="111.76" width="0.1524" layer="91"/>
+<label x="7.62" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$25" class="0">
