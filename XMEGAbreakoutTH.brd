@@ -13,7 +13,7 @@
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -582,6 +582,24 @@ Source: http://www.onsemi.co.jp .. LM137M-D.PDF</description>
 <rectangle x1="-3.2385" y1="-3.1623" x2="-1.3843" y2="-2.2987" layer="51" rot="R270"/>
 <rectangle x1="1.3843" y1="-3.1623" x2="3.2385" y2="-2.2987" layer="51" rot="R270"/>
 </package>
+<package name="SJFAB">
+<wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.651" y1="0.762" x2="-1.397" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.651" y1="-0.762" x2="-1.397" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.397" y1="-1.016" x2="1.651" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.651" y1="-0.762" x2="1.651" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.651" y1="-0.762" x2="-1.651" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.397" y1="1.016" x2="1.397" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0" x2="1.524" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.016" y1="0" x2="-1.524" y2="0" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="-0.127" x2="-0.254" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<wire x1="0.254" y1="0.127" x2="0.254" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
+<smd name="1" x="-0.7874" y="0" dx="1.1176" dy="1.6002" layer="1"/>
+<smd name="2" x="0.7874" y="0" dx="1.1176" dy="1.6002" layer="1"/>
+<text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 <library name="adafruit">
@@ -822,6 +840,7 @@ design rules under a new name.</description>
 <element name="JP9" library="SparkFun" package="1X02" value="" x="5.08" y="3.81" rot="R180"/>
 <element name="JP6" library="fab" package="2X03SMD" value="" x="42.251265625" y="42.712053125" rot="R180"/>
 <element name="JUMPER" library="fab" package="R1206FAB" value="0Ohm" x="46.99" y="13.97" rot="R90"/>
+<element name="U$3" library="fab" package="SJFAB" value="SOLDER_JUMPER" x="52.07" y="3.81" rot="R90"/>
 </elements>
 <signals>
 <signal name="PA7">
@@ -1104,9 +1123,10 @@ design rules under a new name.</description>
 <wire x1="52.07" y1="8.5725" x2="50.4825" y2="10.16" width="0.6096" layer="1"/>
 <wire x1="2.54" y1="3.81" x2="2.54" y2="2.54" width="0.6096" layer="1"/>
 <wire x1="2.54" y1="2.54" x2="3.81" y2="1.27" width="0.6096" layer="1"/>
-<wire x1="3.81" y1="1.27" x2="49.53" y2="1.27" width="0.6096" layer="1"/>
-<wire x1="49.53" y1="1.27" x2="52.07" y2="3.81" width="0.6096" layer="1"/>
-<wire x1="52.07" y1="3.81" x2="52.07" y2="8.5725" width="0.6096" layer="1"/>
+<wire x1="3.81" y1="1.27" x2="50.8" y2="1.27" width="0.6096" layer="1"/>
+<wire x1="52.07" y1="8.5725" x2="52.07" y2="5.08" width="0.6096" layer="1"/>
+<wire x1="50.8" y1="1.27" x2="52.07" y2="2.54" width="0.6096" layer="1"/>
+<wire x1="52.07" y1="2.54" x2="52.07" y2="5.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D+">
 <contactref element="U$1" pad="D+"/>
